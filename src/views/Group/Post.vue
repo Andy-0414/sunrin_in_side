@@ -8,7 +8,7 @@
 				<span class="delete" v-if="post.owner == getUser" @click="removepost">삭제하기</span>
 			</p>
 		</div>
-		<p class="post__content">{{post.content}}</p>
+		<pre class="post__content" v-html="post.content"></pre>
 		<div class="post__recommend" @click="recommend">
 			<i class="material-icons">stars</i>
 			추천 ({{post.recommend}})
