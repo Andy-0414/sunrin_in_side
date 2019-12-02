@@ -19,7 +19,9 @@ export default new Vuex.Store({
 		LOGIN({ state, commit }, data): Promise<string> {
 			return new Promise<string>((resolve, reject) => {
 				axios
-					.post(state.mainPath + "/users/login/", data)
+					.post(state.mainPath + "/users/login/", data, {
+						withCredentials: true
+					})
 					.then(data => {
 						if (data.data.result) {
 							commit("setUser", data.data.username);
