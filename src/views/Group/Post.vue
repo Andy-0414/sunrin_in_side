@@ -60,15 +60,18 @@ export default Vue.extend({
 				.catch(err => console.dir(err));
 		},
 		recommend() {
-			this.$store
-				.dispatch("RECOMMEND_POST", {
-					groupPk: this.getGroupPk,
-					postPk: this.getPostPk
-				})
-				.then(data => {
-					this.postReload();
-				})
-				.catch(err => console.dir(err));
+			if (!localStorage.getItem(`recommend.${this.getPostPk}`)) {
+				localStorage.setItem(`recommend.${this.getPostPk}`, "true");
+				this.$store
+					.dispatch("RECOMMEND_POST", {
+						groupPk: this.getGroupPk,
+						postPk: this.getPostPk
+					})
+					.then(data => {
+						this.postReload();
+					})
+					.catch(err => console.dir(err));
+			}
 		},
 		removepost() {
 			this.$store
@@ -146,6 +149,7 @@ export default Vue.extend({
 		margin-top: 10px;
 		padding: 5px;
 		min-height: 400px;
+		white-space: pre-line;
 	}
 	.post__recommend {
 		display: flex;
