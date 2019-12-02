@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sunrin_in_side/precache-manifest.e16cf6b6761d55539f57bd4da3fd9cb2.js"
+  "/sunrin_in_side/precache-manifest.e61c99ae57381b8694f3d1ce9dc50b06.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "sunrininside"});

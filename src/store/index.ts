@@ -8,7 +8,7 @@ export default new Vuex.Store({
 	state: {
 		user: "",
 		isSuperUser: false,
-		mainPath: "http://localhost:8000"
+		mainPath: "http://andy0414.com:8000"
 	},
 	mutations: {
 		setUser(state, data) {

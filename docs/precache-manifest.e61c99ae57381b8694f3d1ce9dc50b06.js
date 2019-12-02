@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b19721c958375f87e16",
+    "revision": "7599aab528e39f16ac84",
     "url": "/sunrin_in_side/css/app.e3cab09e.css"
   },
   {
@@ -8,12 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sunrin_in_side/img/logo1.88f6dcd3.png"
   },
   {
-    "revision": "33e60eea36c53ff2db6f8f3ea59c56cb",
+    "revision": "142b8361fb977aa22d674a24e2408fcb",
     "url": "/sunrin_in_side/index.html"
   },
   {
-    "revision": "9b19721c958375f87e16",
-    "url": "/sunrin_in_side/js/app.3d7f5f17.js"
+    "revision": "7599aab528e39f16ac84",
+    "url": "/sunrin_in_side/js/app.ac53995f.js"
   },
   {
     "revision": "2d920279d3ace66f0a6c",
