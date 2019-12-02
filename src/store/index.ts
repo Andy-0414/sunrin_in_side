@@ -142,7 +142,7 @@ export default new Vuex.Store({
 							content: data.content,
 							visit: 0,
 							recommend: 0,
-							group: 1
+							group: 8
 						},
 						{
 							withCredentials: true
