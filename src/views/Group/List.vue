@@ -109,6 +109,7 @@ export default Vue.extend({
 	display: flex;
 	justify-content: space-between;
 	margin-top: 20px;
+
 	.group__posttype__left {
 		display: flex;
 	}
@@ -132,6 +133,7 @@ export default Vue.extend({
 }
 .group__postlist {
 	margin-top: 20px;
+
 	border-top: 3px solid #4a56a8;
 	border-collapse: collapse;
 	width: 100%;
@@ -154,7 +156,7 @@ export default Vue.extend({
 		border-bottom: 2px solid #4a56a8;
 		tr {
 			border-bottom: 1px solid #eeeeee;
-            cursor: pointer;
+			cursor: pointer;
 		}
 		td {
 			padding: 7.5px;
@@ -174,6 +176,28 @@ export default Vue.extend({
 			margin-right: 8px;
 			&.recommend {
 				color: #4a56a8;
+			}
+		}
+	}
+}
+@media (max-width: 1100px) {
+	.group__postlist {
+		thead {
+			th:nth-child(1),
+			th:nth-child(4),
+			th:nth-child(5) {
+				width: 60px;
+				display: none;
+			}
+			th:nth-child(3) {
+				width: 100px;
+			}
+		}
+		tbody {
+			td:nth-child(1),
+			td:nth-child(4),
+			td:nth-child(5) {
+				display: none;
 			}
 		}
 	}
