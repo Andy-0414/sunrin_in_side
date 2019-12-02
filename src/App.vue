@@ -67,6 +67,7 @@ export default Vue.extend({
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+    height: 100vh;
 
 	.header {
 		display: flex;
@@ -130,5 +131,17 @@ export default Vue.extend({
 		width: 100%;
 		max-width: 1200px;
 	}
+}
+@media (max-width: 1100px){
+    .header{
+        flex-direction: column;
+        .search{
+            margin-right: 0 !important;
+
+            .search__input{
+                width: 90% !important;
+            }
+        }
+    }
 }
 </style>

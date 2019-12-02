@@ -154,6 +154,7 @@ export default Vue.extend({
 		border-bottom: 2px solid #4a56a8;
 		tr {
 			border-bottom: 1px solid #eeeeee;
+            cursor: pointer;
 		}
 		td {
 			padding: 7.5px;

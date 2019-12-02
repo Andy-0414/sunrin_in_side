@@ -184,4 +184,22 @@ export default Vue.extend({
 		}
 	}
 }
+@media (max-width: 1100px){
+    .home{
+        flex-direction: column;
+    }
+    .home__recommend__item{
+        flex-basis: 30%;
+    }
+}
+@media (max-width: 800px){
+    .home__recommend__item{
+        flex-basis: 40%;
+    }
+}
+@media (max-width: 800px){
+    .home__recommend__item{
+        flex-basis: 100%;
+    }
+}
 </style>
